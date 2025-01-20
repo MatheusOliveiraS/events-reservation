@@ -1,3 +1,20 @@
+* The application runs at port 8000 and follows the route format of http://localhost:8000/api/[controller] . 
+* The available controllers are 'events', which lists all events created by the seed, and 'reservations', which will be empty at first.
+* For new inserts the application acceps JSON format as the following:
+
+{
+   "eventId": [integer],
+   "ticketAmount": [integer]
+}
+
+* For changes in existent reservations, the id of the reservation must be added after the [controller], and the body will remain the same of an insert.
+    * Notice that both the event and the ticket amount can be changed.
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
